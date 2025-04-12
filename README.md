@@ -1,4 +1,4 @@
-# Water Footprint Calculator for Sustainable Agriculture
+# AquaWise
 
 A full-stack web application that estimates the water footprint of agricultural practices based on crop type, region, irrigation method, and weather data. The platform enables farmers, researchers, and policymakers to make data-driven decisions for efficient water use and climate-resilient farming.
 
