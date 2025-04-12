@@ -49,11 +49,6 @@ This platform estimates crop-wise water consumption (blue, green, and grey water
 ## Architecture
 
 Frontend (Next.js) ↓ Backend (Django + Django REST Framework) ↓ PostgreSQL (Data Storage) ↓ Machine Learning Model (Water Footprint Estimator) ↓ External APIs (Climate, Soil, Satellite)
-
-yaml
-Copy
-Edit
-
 The system is modular, scalable, and suitable for cloud deployment with production-ready APIs.
 
 ---
@@ -100,39 +95,20 @@ All endpoints return JSON unless otherwise specified.
 
 ---
 
-## Installation
 
-### Backend Setup
 
-```bash
-git clone https://github.com/your-username/water-footprint-calculator.git
-cd Backend
-python -m venv env
-source env/bin/activate  # or `env\Scripts\activate` on Windows
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-Frontend Setup
-bash
-Copy
-Edit
-cd frontend
-npm install
-npm run dev
-Ensure .env.local contains the correct API URL.
-
-Usage
+## Usage
 Start the backend and frontend servers
 
 Visit http://localhost:3000 to access the dashboard
 
 Fill in the crop type, location, and irrigation method
 
-Click “Calculate” to view water usage stats and graphs
+Click “Generate” to view water usage stats and graphs
 
 Generate and download reports as needed
 
-Datasets and APIs Used
+## Datasets and APIs Used
 Source	Purpose
 NASA POWER	Evapotranspiration, solar radiation, climate
 OpenWeatherMap	Real-time temperature, rainfall, humidity
